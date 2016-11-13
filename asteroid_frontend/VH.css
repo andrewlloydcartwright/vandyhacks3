@@ -8,21 +8,17 @@ ul {
     opacity: .9;
     text-transform: uppercase;
 }
-
 .active {
     background-color: #0b3d91;
 }
-
 ul {
     position: fixed;
     top: 0;
     width: 99%;
 }
-
 li {
     float: left;
 }
-
 li a {
     display: block;
     color: white;
@@ -30,18 +26,15 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 li a:hover {
     background-color: #111;
 }
-
 .container {
     text-align: center;
     width: 1425px;
     height: 100px;
     position: fixed;
 }
-
 .nasa_logo {
     width: 425px;
     height: 350px;
@@ -49,19 +42,16 @@ li a:hover {
     padding: none;
     opacity: 0.4;
 }
-
 div.transbox {
     background-color: white;
     border: none;
     opacity: 1;
 }
-
 body {
     background-image: url(asteroid2.jpg);
     background-repeat: no-repeat;
     background-position: top center;
 }
-
 .header_1 {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
@@ -69,14 +59,12 @@ body {
     font-size: 275%;
     text-transform:
 }
-
 .header_1_2 {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: white;
     font-size: 120%;
 }
-
 .header_2 {
     font-family: 'Open Sans', sans-serif;
     text-shadow: 1.5px 1.5px black;
@@ -85,11 +73,4 @@ body {
     text-align: center;
     color: white;
     font-size: 140%;
-}
-
-.discovered {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 120%;
 }
