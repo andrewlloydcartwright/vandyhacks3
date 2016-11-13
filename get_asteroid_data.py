@@ -49,20 +49,21 @@ def get_NASA_data():
     c.close
 
 
-# def get_asterrank_data():
-#     c = pycurl.Curl()
-#     f = open('asterrank_data.json', 'a+')
-#     c.setopt(c.URL, 'http://www.asterank.com/api/asterank?query={"price":{"$gt":1000000,"$lt":50000000000}}&limit=10')
-#     c.setopt(c.WRITEDATA, buffer)
-#     c.perform()
-#     body = buffer.getvalue()
-#     f.write(body)
-#     f.close
-#     c.close
+def get_asterrank_data():
+    buffer = BytesIO()
+    c = pycurl.Curl()
+    f = open('asterrank_data.json', 'a+')
+    c.setopt(c.URL, 'http://www.asterank.com/api/asterank?query={"price":{"$gt":1000000,"$lt":50000000000}}&limit=10')
+    c.setopt(c.WRITEDATA, buffer)
+    c.perform()
+    body = buffer.getvalue()
+    f.write(body)
+    f.close
+    c.close
 
 
 get_NASA_data()
-# get_asterrank_data()
+get_asterrank_data()
 
 # json_string = f.read()
 # json_data = json.loads(json_string)
