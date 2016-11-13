@@ -1,13 +1,16 @@
+
 ul {
+    font-family: 'Space Mono', monospace;
     list-style-type: none;
     margin: 3px 0px 0px 0px;
     padding: 0;
     overflow: hidden;
     background-color: #333;
     opacity: .9;
+    text-transform: uppercase;
 }
 .active {
-    background-color: #4CAF50;
+    background-color: #0b3d91;
 }
 ul {
     position: fixed;
@@ -28,6 +31,17 @@ li a {
 
 li a:hover {
     background-color: #111;
+}
+.container {
+  width: 1450px;
+  height: 200px;
+}
+.nasa_logo {
+  width: 275px;
+  height: 225px;
+  margin: auto;
+  margin: 375px 0px 20px 560px;
+  padding: none;
 }
 .container1 {
   margin: auto;
@@ -55,25 +69,28 @@ body {
   background-position: top center;
 }
 .header_1 {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Orbitron', sans-serif;
   text-align: center;
   color: white;
-  font-size: 400%;
+  font-size: 275%;
+  text-transform:
 }
 .header_1_2 {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   color: white;
-  font-size: 325%;
+  font-size: 120%;
 }
  .header_2 {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Open Sans', sans-serif;
+  width: auto;
+  margin: auto;
   text-align: center;
   color: white;
-  font-size: 200%;
+  font-size: 130%;
 }
 .discovered {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   color: white;
   font-size: 120%;

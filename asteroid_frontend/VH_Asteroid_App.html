@@ -2,12 +2,15 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="VH.css">
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orbitron" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.2.3/typeit.min.js"></script>
+    " "
 </head>
 <title>Asteroid Harvest</title>
 
@@ -24,26 +27,42 @@
             </ul>
         </div>
     </nav>
+    <br><br>
     <div class="header_1">
-        <h1> Asteroid Harvester </h1>
+        <h1> Asteroid Harvest </h1>
     </div>
-    <div class="header_2">
-        <h2> You are the lead NASA astrophysicist
-              <br> specializing in <i>near earth object</i> (NEO) observation.
-            </h2>
+    <div class="container"> <div class="header_2">
+        <h2 id="explorer"></h2>
+        <script>
+            $('#explorer').typeIt({
+                    speed: 50,
+                    autoStart: true
+                })
+                .tiType('Welcome, explorer.')
+                .tiPause(700)
+                .tiSettings({
+                    speed: 50
+                })
+                .tiBreak()
+                .tiBreak()
+                .tiType(' As an underappreciated NASA astrophysicist, you have decided to')
+                .tiPause(500)
+                .tiBreak()
+                .tiType(' "commandeer" a highly-sophisticated spacecraft to make some extra dough.')
+                .tiPause(200)
+                .tiBreak()
+                .tiType('In your work, you have discovered that certain astroids have particularly valuable minerals.')
+                .tiPause(200)
+                .tiBreak()
+                .tiType('Your mission: To identify, chase, and harvest these astroids.');
+        </script>
     </div>
     </div>
+    </div>
+    <img class="nasa_logo" align="middle" src="nasa_logo.png" alt="NASA Insignia">
     <br><br><br><br>
-    <div class="discovered">
-        <div class="transbox">
-            <h2 id="About"> You have just discovered a special group of NEO objects: asteroids. These asteroids are composed of materials that are unavailable on earth. This makes them extremely valuable to humanity.
-        </h2>
-        </div>
-        <div class="header_1_2">
-            <div class="transbox2">
-                Your mission: <br> Identify and harvest the most valuable asteroids.
-            </div>
-        </div>
+
+
     </div>
     </div>
 
