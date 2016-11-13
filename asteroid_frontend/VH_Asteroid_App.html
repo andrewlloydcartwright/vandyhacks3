@@ -31,35 +31,57 @@
     <div class="header_1">
         <h1> Asteroid Harvest </h1>
     </div>
-    <div class="container"> <div class="header_2">
-        <h2 id="explorer"></h2>
-        <script>
-            $('#explorer').typeIt({
-                    speed: 50,
-                    autoStart: true
-                })
-                .tiType('Welcome, explorer.')
-                .tiPause(700)
-                .tiSettings({
-                    speed: 50
-                })
-                .tiBreak()
-                .tiBreak()
-                .tiType(' As an underappreciated NASA astrophysicist, you have decided to')
-                .tiPause(500)
-                .tiBreak()
-                .tiType(' "commandeer" a highly-sophisticated spacecraft to make some extra dough.')
-                .tiPause(200)
-                .tiBreak()
-                .tiType('In your work, you have discovered that certain astroids have particularly valuable minerals.')
-                .tiPause(200)
-                .tiBreak()
-                .tiType('Your mission: To identify, chase, and harvest these astroids.');
-        </script>
+    <div class="container" style="position:absolute; z-index:2;">
+        <div class="header_2">
+            <h2 id="explorer"></h2>
+            <script>
+                $('#explorer').typeIt({
+                        speed: 70,
+                        autoStart: true
+                    })
+                    .tiType('Greetings,')
+                    .tiPause(500)
+                    .tiType(' explorer.')
+                    .tiPause(700)
+                    .tiSettings({
+                        speed: 45
+                    })
+                    .tiBreak()
+                    .tiBreak()
+                    .tiType(' As an underappreciated NASA astrophysicist, ')
+                    .tiPause(200)
+                    .tiType('you have decided to')
+                    .tiPause(900)
+                    .tiBreak()
+                    .tiType(' <i>"commandeer"</i> ')
+                    .tiPause(300)
+                    .tiType('a highly-sophisticated spacecraft to make some extra dough.')
+                    .tiPause(800)
+                    .tiBreak()
+                    .tiBreak()
+                    .tiType('In your work, you have discovered that')
+                    .tiBreak()
+                    .tiType('certain asteroids contain invaluable scarce minerals.')
+                    .tiPause(500)
+                    .tiBreak()
+                    .tiBreak()
+                    .tiType('Your mission:')
+                    .tiPause(450)
+                    .tiType(' To locate, ')
+                    .tiPause(120)
+                    .tiType('hunt down, ')
+                    .tiPause(120)
+                    .tiType('and harvest these asteroids.')
+                    .tiPause(800)
+                    .tiBreak()
+                    .tiBreak()
+                    .tiType('Good luck.');
+            </script>
+        </div>
     </div>
-    </div>
-    </div>
-    <img class="nasa_logo" align="middle" src="nasa_logo.png" alt="NASA Insignia">
+
+    <img class="nasa_logo" style="position:absolute; z-index:1;" src="nasa_logo.png" alt="NASA Insignia">
+  </transbox>
     <br><br><br><br>
 
 
